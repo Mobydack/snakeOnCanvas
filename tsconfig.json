@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+			"~*": ["./*"]
+		},
+		"target": "es2017",
+		"sourceMap": true,
+		"noImplicitAny": true
+	},
+	"exclude": [
+		"node_modules/**/*.ts"
+	],
+	"include": [
+		"src/**/*"
+	]
+}

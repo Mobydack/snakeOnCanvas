@@ -1,0 +1,3 @@
+{
+	"!(*test).ts": ["tslint --fix", "git add"]
+}

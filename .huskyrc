@@ -1,0 +1,7 @@
+{
+	"hooks": {
+		"precommit": "lint-staged && npx test",
+		"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+		"prepare-commit-msg": "exec < /dev/tty && npx git-cz --hook || true"
+	}
+}

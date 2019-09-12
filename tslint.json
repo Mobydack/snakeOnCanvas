@@ -1,0 +1,66 @@
+{
+	"defaultSeverity": "error",
+	"extends": [
+		"tslint:recommended"
+	],
+	"jsRules": {},
+	"rules": {
+		"max-line-length": [
+			true,
+			{
+			  "limit": 120,
+			  "ignore-pattern": "^import |^export {(.*?)}",
+			  "check-strings": true,
+			  "check-regex": true
+			}
+		],
+		"no-console": {
+			"severity": "warning"
+		},
+		"no-any": true,
+		"interface-name": [true, "always-prefix"],
+		"no-misused-new": true,
+		"indent": [true, "tabs", 4],
+		"space-within-parens": true,
+		"object-literal-key-quotes": [true, "consistent-as-needed"],
+		"quotemark": [true, "single"],
+		"semicolon": [true, "always"],
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "always",
+				"singleline": "never"
+			}
+		],
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			},
+			{
+				"call-signature": "onespace",
+				"index-signature": "onespace",
+				"parameter": "onespace",
+				"property-declaration": "onespace",
+				"variable-declaration": "onespace"
+			}
+		],
+		"variable-name": {
+			"severity": "error",
+			"options": [
+				"require-const-for-all-caps",
+				"ban-keywords",
+				"check-format",
+				"allow-leading-underscore"
+			]
+		},
+		"class-name": true,
+		"no-namespace": [true, "allow-declarations"],
+		"no-bitwise": false
+	},
+	"rulesDirectory": []
+}
